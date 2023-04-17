@@ -43,3 +43,107 @@
     background-color: #777;
     color: #fff;
 } /* 접근성 향상 */
+
+/* visual 영역 */
+#visual {
+    width: 100%;
+    height: calc(100vh - 81px); /* 전체에서 border-bottom을 포함한 header 값을 뺀 값 */
+    background-color: #000;
+}
+
+#visual video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+#visual .inner {
+    width: 1180px;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#visual .inner h1 {
+    font: normal 120px/1 'Arial';
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+#visual .inner p {
+    font: 16px/1.4 'Arial';
+    color: #888;
+    margin-bottom: 120px;
+}
+
+#visual .inner a {
+    display: block;
+    width: 400px;
+    height: 30px;
+    border: 1px solid #bbb;
+    font: bold 11px/30px 'Arial';
+    color: #fff;
+    text-align: center;
+    transition: 0.5s;
+}
+#visual .inner a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* news 영역 */
+#news {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 200px 0;
+}
+
+#news .inner {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+#news .inner h1 {
+    font: bold 30px/1 'Arial';
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#news .inner .wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#news .inner .wrap .article {
+    width: 280px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+#news .inner .wrap .article:last-of-type {
+    margin-right: 0px;
+}
+
+#news .inner .wrap .article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+#news .inner .wrap .article h2 {
+    font: bold 18px/1 'Arial';
+    color: #555;
+    margin-bottom: 10px;
+}
+#news .inner .wrap .article p {
+    font: 14px/1 'Arial';
+    color: #777;
+    margin-bottom: 10px;
+}
