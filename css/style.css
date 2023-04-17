@@ -234,7 +234,6 @@
 #brand .inner .wrap article:hover img {
     transform: scale(1.2);
 }
-
 /* using float */
 #brand .inner .wrap article:first-of-type {
     float: left;
@@ -243,4 +242,157 @@
 }
 #brand .inner .wrap article:first-of-type i {
     font-size: 100px; /* font sized icon */
+}
+
+/* banner */
+#banner {
+    width: 100%;
+    padding: 150px 0;
+    background: url(../img/banner.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#banner .inner {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+#banner .inner h1 {
+    font: bold 30px/1 "Arial";
+    color: #fff;
+    text-align: center;
+}
+
+#banner .inner p {
+    font: 16px/1.3 "Arial";
+    color: #fff;
+    text-align: center;
+}
+
+#brand .inner .wrap::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* comments */
+#comments {
+    width: 100%;
+    padding: 150px 0;
+}
+
+#comments .inner {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+#comments .inner h1 {
+    font: bold 24px/1 'Arial';
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#comments .inner .wrap::after {
+    content : '';
+    display: block;
+    clear: both;
+}
+
+#comments .inner .wrap ul {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+#comments .inner .wrap ul a {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    background-color: #fff;
+    font: 12px/40px 'Arial';
+    color: #333;
+    display: block;
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+#comments .inner .wrap ul a:last-of-type {
+    margin-bottom: 0px;
+}
+#comments .inner .wrap ul a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+#comments .inner .wrap ul a li .title {
+    margin-left: 15px;
+}
+
+#comments .inner .wrap ul a li .date {
+    float: right;
+    margin-right: 15px;
+    transform: translateY(-40px);
+}
+/* footer */
+#footer {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #666;
+}
+
+#footer .inner {
+    width: 1180px;
+    margin: 0 auto;
+    color: #ccc;
+}
+
+#footer .inner h1 {
+    font: bold 24px/1 "Arial";
+    float: left;
+}
+
+#footer .inner ul {
+    float: right;
+} /* preventing from reverse ordering */
+
+#footer .inner:after {
+    content : '';
+    display: block;
+    clear: both;
+}
+
+#footer .inner ul li {
+    font: bold 14px/20px "Arial";
+    text-align: center;
+    float: left;
+    margin-right: 25px;
+}
+#footer .inner ul li:last-of-type {
+    margin-right: 0px;
+}
+
+#footer .inner ul li a {
+    color: #ccc;
+}
+
+#footer .inner .line {
+    width: 1180px;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+    float: left;
+}
+
+#footer .inner address {
+    width: 100%;
+    font: normal 12px/1.3 "Arial";
+    float: left;
+}
+
+#footer .inner p {
+    font: normal 12px/1 "Arial";
+    float: left;
+    padding-top: 20px;
 }
