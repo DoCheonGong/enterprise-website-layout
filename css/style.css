@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "reset.css";
+/* Main page CSS */
 /* header 영역 */
 #header {
     width: 100%;
@@ -395,4 +396,180 @@
     font: normal 12px/1 "Arial";
     float: left;
     padding-top: 20px;
+}
+
+/* sub-page CSS */
+/* header_sub */
+#header_sub {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+#header_sub .inner {
+    width: 1180px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+#header_sub .inner h1 {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+#header_sub .inner h1 a {
+    font: bold 24px/1 'Arial';
+    color: #444;
+}
+
+#header_sub .inner #gnb {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#header_sub .inner #gnb li {
+    float: left;
+}
+
+#header_sub .inner #gnb li a {
+    display: block;
+    padding: 14px 40px;
+    font: bold 14px/1 'Arial';
+    color: #777;
+}
+#header_sub .inner #gnb li a:hover {
+    background-color: #777;
+    color: #fff;
+}
+/* content */
+.content {
+    width: 100%;
+    padding: 0 0 150px;
+}
+.content .sub_visual {
+    width: 100%;
+    height: 250px;
+    background-color: #bbb;
+    margin-bottom: 50px;
+}
+
+.content .inner {
+    width: 1180px;
+    margin: 0 auto;
+    min-height: 500px;
+}
+.content .inner h1 {
+    font: normal 50px/1 'Arial';
+    color: #000;
+    margin-bottom: 30px;
+}
+.content .inner h1 span {
+    font: normal 20px/1 '맑은 고딕';
+    color: #aaa;
+}
+.content .inner h1 span::before {
+    content: '/';
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+/* footer_sub */
+#footer_sub {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #666;
+}
+
+#footer_sub .inner {
+    width: 1180px;
+    margin: 0 auto;
+    color: #ccc;
+}
+
+#footer_sub .inner h1 {
+    font: bold 24px/1 "Arial";
+    float: left;
+}
+
+#footer_sub .inner ul {
+    float: right;
+} /* preventing from reverse ordering */
+
+#footer_sub .inner:after {
+    content : '';
+    display: block;
+    clear: both;
+}
+
+#footer_sub .inner ul li {
+    font: bold 14px/20px "Arial";
+    text-align: center;
+    float: left;
+    margin-right: 25px;
+}
+#footer_sub .inner ul li:last-of-type {
+    margin-right: 0px;
+}
+
+#footer_sub .inner ul li a {
+    color: #ccc;
+}
+
+#footer_sub .inner .line {
+    width: 1180px;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+    float: left;
+}
+
+#footer_sub .inner address {
+    width: 100%;
+    font: normal 12px/1.3 "Arial";
+    float: left;
+}
+
+#footer_sub .inner p {
+    font: normal 12px/1 "Arial";
+    float: left;
+    padding-top: 20px;
+}
+
+/* department sub_page 영역 */
+.department .sub_visual {
+    background: url(../img/brand1.jpg) no-repeat;
+    background-size: cover;
+}
+
+/* community sub_page 영역 */
+.community .sub_visual {
+    background: url(../img/brand2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.community .inner {
+    width: 1180px;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.community .inner .wrap ul a {
+    color: #000;
+}
+
+.community .inner .wrap ul a li {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #666;
+    font: bold 14px/20px "Arial";
+    float: left;
+    margin-right: 25px;
+}
+/* join sub_page 영역 */
+.join .sub_visual {
+    background: url(../img/brand3.jpg) no-repeat;
+    background-size: cover;
 }
