@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import "reset.css";
+/* header 영역 */
+#header {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+#header .inner {
+    width: 1180px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+#header .inner h1 {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+#header .inner h1 a {
+    font: bold 24px/1 'Arial';
+    color: #444;
+}
+
+#header .inner #gnb {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#header .inner #gnb li {
+    float: left;
+}
+
+#header .inner #gnb li a {
+    display: block;
+    padding: 14px 40px;
+    font: bold 14px/1 'Arial';
+    color: #777;
+}
+#header .inner #gnb li a:hover {
+    background-color: #777;
+    color: #fff;
+} /* 접근성 향상 */
