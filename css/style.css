@@ -147,3 +147,100 @@
     color: #777;
     margin-bottom: 10px;
 }
+
+#brand {
+    width: 100%;
+    padding: 100px 0 200px;
+}
+
+#brand .inner {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+#brand .inner h1 {
+    font: bold 30px/1 'Arial';
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#brand .inner .wrap::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#brand .inner .wrap article {
+    width: 380px;
+    height: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;   
+    overflow: hidden;
+    position: relative;
+}
+#brand .inner .wrap article:first-of-type {
+    height: 620px;
+    margin-bottom: 0px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+#brand .inner .wrap article:first-of-type i {
+    display: block;
+    margin-bottom: 10px;
+    /* transform: translateY(-250%) scale(6); */
+}
+#brand .inner .wrap article:first-of-type h2 {
+    font: bold 24px/1 'Arial';
+    color: #fff;
+    margin-bottom: 20px;
+}
+#brand .inner .wrap article:first-of-type p {
+    font: 14px/1.5 'Arial';
+    color: #999;
+    margin-bottom: 40px;
+}
+#brand .inner .wrap article:first-of-type a {
+    display: block;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #bbb;
+    font: bold 11px/30px 'Arial';
+    color: #ccc;
+    transition: 0.5s;
+    margin-left: 60px;
+}
+#brand .inner .wrap article:first-of-type a:hover {
+    background-color: #ccc;
+    color: #333;
+}
+
+#brand .inner .wrap article:nth-of-type(3) {
+    margin-right: 0px;
+}
+#brand .inner .wrap article:last-of-type {
+    width: 780px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+#brand .inner .wrap article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+#brand .inner .wrap article:hover img {
+    transform: scale(1.2);
+}
+
+/* using float */
+#brand .inner .wrap article:first-of-type {
+    float: left;
+    margin-right: 20px;
+    padding: 170px 50px 0;
+}
+#brand .inner .wrap article:first-of-type i {
+    font-size: 100px; /* font sized icon */
+}
